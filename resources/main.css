@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #2b2b2b;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.img-bg-header {
+  height: 100%;
+  background-image: url("../assets/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-green {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  background-color: #2b2b2b;
+  text-transform: lowercase;
+}
+
+.icons i {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: #3d3d3d;
+  padding-left: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.menu-desktop {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  right: 150px;
+  padding-top: 30px;
+}
+
+.menu-desktop a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.menu-mobile {
+  display: none;
+  justify-content: center;
+  text-align: end;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.menu-mobile i {
+  font-size: 40px;
+}
+
+h1 {
+  position: absolute;
+  font-size: 60px;
+  right: 150px;
+  top: 100px;
+  letter-spacing: 10px;
+}
+
+.images-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.images-wrapper-text {
+  flex: 33.33%;
+  padding: 5px;
+  position: relative;
+}
+
+
+.images-wrapper .images-wrapper-text {
+  padding: 0;
+  margin: 0;
+}
+
+.images-wrapper-text img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  padding: 0px;
+  opacity: 0.4;
+}
+
+.top-header {
+  position: absolute;
+  width: 100%;
+  left: 15px;
+  top: 5px;
+  line-height: 8px;
+}
+
+.top-header h4 {
+  font-size: 18x;
+  letter-spacing: 3px;
+}
+
+.images-wrapper-text p {
+  position: absolute;
+  bottom: 50px;
+  left: -5px;
+  transform: rotate(-90deg);
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.images-wrapper .images-wrapper-text:nth-child(odd) p {
+  left: -25px;
+  bottom: 70px;
+}
+
+button {
+  background-color: #3d3d3d;
+  border-radius: 30px;
+  font-size: 18px;
+  text-align: center;
+  width: 150px;
+  padding: 10px 15px;
+  margin: 30px auto;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+footer h2 {
+  font-size: 25px;
+  color: #c09c78;
+  letter-spacing: 5px;
+}
+
+.form-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-transform: lowercase;
+  margin-bottom: 20px;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  justify-content: space-between;
+}
+
+.top-side-form,
+.bottom-side-form {
+  display: flex;
+}
+
+.form-wrapper input {
+  color: #fff;
+  border: 1px solid #3d3d3d;
+  background-color: #3d3d3d;
+  margin-right: 10px;
+  padding: 12px;
+}
+
+.form-wrapper input::placeholder,
+textarea::placeholder {
+  color: #fff;
+  padding-left: 10px;
+}
+
+textarea {
+  background-color: #3d3d3d;
+  border: 1px solid #3d3d3d;
+  width: 300px;
+  height: 110px;
+}
+
+.button-send {
+  background-color: #c09c78;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.button-send i {
+  font-size: 15px;
+  padding-left: 8px;
+}
+
+@media (max-width: 600px) {
+  .wrapper,
+  .images-wrapper {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    flex-direction: column;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  h1 {
+    top: auto;
+    bottom: -25px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .top-header {
+    display: flex;
+    justify-content: center;
+    left: auto;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
+  .top-header :nth-child(2) {
+    color: #c09c78;
+    margin-left: 10px;
+  }
+
+  .images-wrapper-text p {
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .images-wrapper .images-wrapper-text:nth-child(odd) p {
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  button {
+    display: none;
+  }
+
+
+  .form-wrapper {
+    flex-direction: column;
+  }
+
+  .form-wrapper input {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .form-info {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .top-side-form,
+  .bottom-side-form {
+    flex-direction: column;
+  }
+
+  .button-send {
+    display: block;
+    margin-right: 15%;
+  }
+
+}
