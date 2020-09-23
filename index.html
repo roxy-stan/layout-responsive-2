@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Layout responsive - 2" />
+    <meta name="keywords" content="HTML,CSS" />
+    <meta name="author" content="Roxi Stan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layout responsive - 2</title>
+
+    <link href="bundles/font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="resources/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="img-bg-header">
+          <div class="box-green">
+            <h2>go.arch</h2>
+            <div class="icons"><i class="fal fa-search"></i></div>
+            <div class="icons"><i class="fab fa-instagram"></i></div>
+            <div class="icons"><i class="fab fa-facebook-f"></i></div>
+          </div>
+
+          <nav class="menu-desktop">
+            <a href="#home">Home</a>
+            <a href="#about-us">About us</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact-us">Contact us</a>
+          </nav>
+
+          <nav class="menu-mobile">
+            <a><i class="fas fa-bars"></i></a>
+          </nav>
+
+          <h1>Projects</h1>
+        </div>
+      </header>
+      <section>
+        <div class="images-wrapper">
+          <div class="images-wrapper-text">
+            <img src="assets/concert-hall.jpg" alt="concert-hall" />
+            <div class="top-header">
+              <h4>Concert hall</h4>
+              <h4>in New york</h4>
+            </div>
+            <p>Architecture</p>
+          </div>
+
+          <div class="images-wrapper-text">
+            <img src="assets/bedroom-2.jpg" alt="bedroom-2" />
+            <div class="top-header">
+              <h4>Modern bedroom</h4>
+              <h4>in Gorizia</h4>
+            </div>
+            <p>Interior</p>
+          </div>
+
+          <div class="images-wrapper-text">
+            <img src="assets/hotel.jpg" alt="hotel" />
+            <div class="top-header">
+              <h4>Modern hotel</h4>
+              <h4>in London</h4>
+            </div>
+            <p>Architecture</p>
+          </div>
+
+          <div class="images-wrapper-text">
+            <img src="assets/bedroom-1.jpg" alt="bedroom-1" />
+            <div class="top-header">
+              <h4>Modern bedroom</h4>
+              <h4>in Paris</h4>
+            </div>
+            <p>Interior</p>
+          </div>
+
+          <div class="images-wrapper-text">
+            <img src="assets/library.jpg" alt="library" />
+            <div class="top-header">
+              <h4>Modern library</h4>
+              <h4>in Chicago</h4>
+            </div>
+            <p>Architecture</p>
+          </div>
+
+          <div class="images-wrapper-text">
+            <img src="assets/kitchen.jpg" alt="kitchen" />
+            <div class="top-header">
+              <h4>Modern kitchen</h4>
+              <h4>in Bucharest</h4>
+            </div>
+            <p>Interior</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <button type="button">More Projects</button>
+        <h2><span>Get</span> in touch</h2>
+
+        <form>
+          <div class="form-wrapper">
+            <div class="form-info">
+
+              <div class="top-side-form">
+                <input required class="input-validation" type="text" name="name_input" id="nameInput" minlength="50" placeholder="Name"/>
+                <input required class="input-validation" type="number" name="phone_input" id="phoneInput" minlength="10" placeholder="Phone"/>
+              </div>
+
+              <div class="bottom-side-form">
+                <input required class="input-validation" type="text" name="email_input" id="emailInput" placeholder="Email"/>
+                <input required class="input-validation" type="text" name="company_input" id="companyInput" placeholder="Company"/>
+              </div>
+            </div>
+
+            <textarea required class="input-validation" id="textarea" placeholder="Message"
+            ></textarea>
+          </div>
+
+          <button class="button-send" type="submit">Send<i class="fas fa-arrow-right"></i></button>
+
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>
