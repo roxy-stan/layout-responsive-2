@@ -185,11 +185,6 @@ footer h2 {
   justify-content: space-between;
 }
 
-.top-side-form,
-.bottom-side-form {
-  display: flex;
-}
-
 .form-wrapper input {
   color: #fff;
   border: 1px solid #3d3d3d;
@@ -213,7 +208,6 @@ textarea {
 
 .button-send {
   background-color: #c09c78;
-  margin: 0 auto;
   align-items: center;
 }
 
@@ -260,12 +254,7 @@ textarea {
     margin-left: 10px;
   }
 
-  .images-wrapper-text p {
-    bottom: 45%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
+  .images-wrapper-text p,
   .images-wrapper .images-wrapper-text:nth-child(odd) p {
     bottom: 45%;
     left: 50%;
@@ -287,8 +276,6 @@ textarea {
   }
 
   .form-info {
-    flex-wrap: nowrap;
-    flex-direction: column;
     width: 100%;
     height: auto;
   }
@@ -299,6 +286,7 @@ textarea {
 
   .top-side-form,
   .bottom-side-form {
+    display: flex;
     flex-direction: column;
   }
 
