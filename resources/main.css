@@ -185,6 +185,11 @@ footer h2 {
   justify-content: space-between;
 }
 
+.top-side-form,
+.bottom-side-form {
+  display: flex;
+}
+
 .form-wrapper input {
   color: #fff;
   border: 1px solid #3d3d3d;
@@ -208,12 +213,17 @@ textarea {
 
 .button-send {
   background-color: #c09c78;
+  margin: 0 auto;
   align-items: center;
 }
 
 .button-send i {
   font-size: 15px;
   padding-left: 8px;
+}
+
+.wrapper-menu-mobile {
+  display: none;
 }
 
 @media (max-width: 600px) {
@@ -254,7 +264,12 @@ textarea {
     margin-left: 10px;
   }
 
-  .images-wrapper-text p,
+  .images-wrapper-text p {
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .images-wrapper .images-wrapper-text:nth-child(odd) p {
     bottom: 45%;
     left: 50%;
@@ -276,6 +291,8 @@ textarea {
   }
 
   .form-info {
+    flex-wrap: nowrap;
+    flex-direction: column;
     width: 100%;
     height: auto;
   }
@@ -286,7 +303,6 @@ textarea {
 
   .top-side-form,
   .bottom-side-form {
-    display: flex;
     flex-direction: column;
   }
 
@@ -294,5 +310,77 @@ textarea {
     display: block;
     margin-right: 15%;
   }
+
+/* menu-mobile-new */
+
+  .wrapper-menu-mobile {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #2b2b2b;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .show-menu-mobile {
+    display: block;
+  }
+
+  #buttonClose img {
+    position: absolute;
+    right: 10px;
+    top:15px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .title-menu {
+    font-size: 25px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+.menu-mobile-box{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+
+.menu-mobile-box a {
+    text-decoration: none;
+    line-height: 70px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+  }
+
+.icons-menu-mobile {
+  width: 100%;
+  height: 80px;
+  border-top: 2px solid #3d3d3d;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+}
+
+.icons-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.icons-new i {
+  font-size: 40px;
+  color:#3d3d3d;
+}
+
+.icons-menu-mobile div:first-child {
+  border-right: 2px solid #3d3d3d;;
+}
 
 }
