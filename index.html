@@ -14,15 +14,38 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:ital@1&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Source+Code+Pro:ital,wght@1,200&family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="wrapper-menu-mobile" id="buttonMenuMobile">
+      <div id="buttonClose">
+        <img src="assets/icon-close.png" alt="icon-close">
+    </div>
+  
+        <h2 class="title-menu">go.arch</h2>
+
+      <div class="menu-mobile-box">
+        <a href="#home">Home</a>
+        <a href="#about-us">About us</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact-us">Contact us</a>
+      </div>
+
+      <div class="icons-menu-mobile">
+        <div class="icons-new"><i class="fab fa-instagram"></i></div>
+        <div class="icons-new"><i class="fab fa-facebook-f"></i></div> 
+      </div>
+    </div>
+
+
+
+
     <div class="wrapper">
       <header>
         <div class="img-bg-header">
           <div class="box-green">
             <h2>go.arch</h2>
-            <!-- aici era doar o linie/separator vertical, nu o iconita -->
-            <!-- <div class="icons"><i class="fal fa-search"></i></div> -->
             <div class="separator"></div>
             <div class="icons"><i class="fab fa-instagram"></i></div>
             <div class="icons"><i class="fab fa-facebook-f"></i></div>
@@ -36,7 +59,7 @@
             <a href="#contact-us">Contact us</a>
           </nav>
 
-          <nav class="menu-mobile">
+          <nav class="menu-mobile" id="buttonOpen">
             <a><i class="fas fa-bars"></i></a>
           </nav>
 
@@ -48,7 +71,6 @@
           <div class="images-wrapper-text">
             <img src="assets/concert-hall.jpg" alt="concert-hall" />
             <div class="top-header">
-              <!-- acestea nu sunt titluri, doar informatii despre fiecare proiect in parte -->
               <span>Concert hall</span>
               <span>in New york</span>
             </div>
@@ -130,5 +152,10 @@
         </form>
       </footer>
     </div>
+
+    <script src="resources/main.js"></script>
+    <noscript>
+      Your browser currently does not support or has JS disabled.
+  </noscript>
   </body>
 </html>
